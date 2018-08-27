@@ -1,0 +1,7 @@
+{
+  "name": "fotomatron",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
