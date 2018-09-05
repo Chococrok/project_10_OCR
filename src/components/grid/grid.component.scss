@@ -1,3 +1,10 @@
-.ft-grid-row {
-  height: 120px;
+.ft-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ft-grid-content {
+  height: 33vw;
+  width:33vw;
+  object-fit: cover;
 }

@@ -1,11 +1,12 @@
 <ion-grid no-padding>
   <ion-row class="ft-grid-row">
-    <ion-col col-4 *ngFor="let a of astres">
-      <ion-img width="100%" height="100%" src="..."></ion-img>
+    <ion-col class="ft-grid-col" *ngFor="let a of astres">
     </ion-col>
   </ion-row>
 </ion-grid>
-
+<div class="ft-grid">
+  <img class="ft-grid-content" *ngFor="let a of astres" src="{{a.b}}">
+</div>
 <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
   <ion-infinite-scroll-content></ion-infinite-scroll-content>
 </ion-infinite-scroll>
