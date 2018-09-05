@@ -9,11 +9,15 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ComponentModule } from '../components/component.module';
+import { FavoritePage } from '../pages/favorite/favorite';
+import { OwnedPage } from '../pages/owned/owned';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    FavoritePage,
+    OwnedPage,
     ListPage
   ],
   imports: [
@@ -25,6 +29,8 @@ import { ComponentModule } from '../components/component.module';
   entryComponents: [
     MyApp,
     HomePage,
+    FavoritePage,
+    OwnedPage,
     ListPage
   ],
   providers: [

@@ -5,7 +5,7 @@
   </ion-row>
 </ion-grid>
 <div class="ft-grid">
-  <img class="ft-grid-content" *ngFor="let a of astres" src="{{a.b}}">
+  <img class="ft-grid-content" *ngFor="let src of imgSources" src="{{src}}">
 </div>
 <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
   <ion-infinite-scroll-content></ion-infinite-scroll-content>

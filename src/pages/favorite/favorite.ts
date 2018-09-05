@@ -3,12 +3,12 @@ import { NavController } from 'ionic-angular';
 import { Page } from '../Page';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-favorite',
+  templateUrl: 'favorite.html'
 })
-export class HomePage extends Page {
+export class FavoritePage extends Page {
 
-  public static readonly title = "Acceuil";
+  public static readonly title = "Favorites";
 
   public title;
 
@@ -26,7 +26,7 @@ export class HomePage extends Page {
   ]
 
   constructor(public navCtrl: NavController) {
-    super(HomePage.title);
+    super(FavoritePage.title);
   }
 
   pull(): void {
