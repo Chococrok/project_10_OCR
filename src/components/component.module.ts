@@ -1,13 +1,13 @@
 import { NgModule } from "@angular/core";
 import { GridComponent } from "./grid/grid.component";
-import { IonicModule } from "ionic-angular";
+import { IonicPageModule } from "ionic-angular";
 
 @NgModule({
   declarations: [
     GridComponent
   ],
   imports: [
-    IonicModule.forRoot(GridComponent)
+    IonicPageModule.forChild(GridComponent)
   ],
   exports: [
     GridComponent

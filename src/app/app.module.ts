@@ -11,6 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ComponentModule } from '../components/component.module';
 import { FavoritePage } from '../pages/favorite/favorite';
 import { OwnedPage } from '../pages/owned/owned';
+import { PhotoPage } from '../pages/photo/photo';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { OwnedPage } from '../pages/owned/owned';
     HomePage,
     FavoritePage,
     OwnedPage,
+    PhotoPage,
     ListPage
   ],
   imports: [
@@ -31,6 +33,7 @@ import { OwnedPage } from '../pages/owned/owned';
     HomePage,
     FavoritePage,
     OwnedPage,
+    PhotoPage,
     ListPage
   ],
   providers: [

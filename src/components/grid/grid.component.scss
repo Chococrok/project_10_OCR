@@ -5,6 +5,6 @@
 
 .ft-grid-content {
   height: 33vw;
-  width:33vw;
+  width:calc(100%/3);
   object-fit: cover;
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Page } from '../Page';
+import { PhotoPage } from '../photo/photo';
 
 @Component({
   selector: 'page-home',
@@ -29,8 +30,12 @@ export class HomePage extends Page {
     super(HomePage.title);
   }
 
-  pull(): void {
+  pull() {
     this.imgSources.push("https://upload.wikimedia.org/wikipedia/commons/0/03/Vulpes_vulpes_laying_in_snow.jpg")
+  }
+
+  navigate(imgSource: string) {
+    this.navCtrl.push(PhotoPage, { imgSource });
   }
 
 }
