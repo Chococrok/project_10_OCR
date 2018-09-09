@@ -3,38 +3,23 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ComponentModule } from '../components/component.module';
-import { FavoritePage } from '../pages/favorite/favorite';
-import { OwnedPage } from '../pages/owned/owned';
-import { PhotoPage } from '../pages/photo/photo';
+import { PageModule } from '../pages/page.module';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    FavoritePage,
-    OwnedPage,
-    PhotoPage,
-    ListPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    ComponentModule,
+    PageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    FavoritePage,
-    OwnedPage,
-    PhotoPage,
-    ListPage
   ],
   providers: [
     StatusBar,
