@@ -9,7 +9,7 @@
 
 <ion-content>
   <ft-grid
-  [imgSources]="imgSources"
-  (reachedBottom)="pull()"
+  [photos]="photos"
+  (reachedBottom)="getEveryPhotos()"
   (itemSelected)="navigate($event)"></ft-grid>
 </ion-content>

@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PageModule } from '../pages/page.module';
+import { ServiceModule } from '../services/service.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PageModule } from '../pages/page.module';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     PageModule,
+    ServiceModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

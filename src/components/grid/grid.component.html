@@ -1,12 +1,5 @@
-<ion-grid no-padding>
-  <ion-row class="ft-grid-row">
-    <ion-col class="ft-grid-col" *ngFor="let a of astres">
-    </ion-col>
-  </ion-row>
-</ion-grid>
-
 <div class="ft-grid">
-  <img class="ft-grid-content" (click)="selectItem(src)" *ngFor="let src of imgSources" src="{{src}}">
+  <img class="ft-grid-content" (click)="selectItem(photo)" *ngFor="let photo of photos" src="{{photo.src}}">
 </div>
 
 <ion-infinite-scroll (ionInfinite)="doInfinite($event)">

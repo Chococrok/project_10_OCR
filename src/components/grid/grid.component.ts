@@ -1,4 +1,5 @@
 import { Component, Input, EventEmitter, Output } from '@angular/core';
+import { Photo } from '../../models/photo.model';
 
 @Component({
   selector: 'ft-grid',
@@ -6,16 +7,16 @@ import { Component, Input, EventEmitter, Output } from '@angular/core';
   //styleUrls: ['grid.component.scss']
 })
 export class GridComponent {
-  @Input() imgSources: [string];
+  @Input() photos: Photo[];
   @Output() reachedBottom = new EventEmitter<void>();
-  @Output() itemSelected = new EventEmitter<string>();
+  @Output() itemSelected = new EventEmitter<Photo>();
 
   doInfinite(infiniteScroll) {
     this.reachedBottom.emit()
     infiniteScroll.complete();
   }
 
-  selectItem(src) {
-    this.itemSelected.emit(src);
+  selectItem(photo: Photo) {
+    this.itemSelected.emit(photo);
   }
 }
