@@ -1,10 +1,16 @@
 import { Injectable } from "@angular/core";
+import { AngularFireDatabase } from "@angular/fire/database"
 import { Photo } from "../models/photo.model";
 
 @Injectable()
 export class PhotoService {
 
+  constructor(private db: AngularFireDatabase) { }
+
   getEveryPhotos(): Photo[] {
+    this.db.list('foo').push({'toto': 'tata'});
+    this.db.object('foo').set({'toto': 'tata'});
+    console.log('I am pushing !!!!')
     return [
       {
         name: "snow-fox",
