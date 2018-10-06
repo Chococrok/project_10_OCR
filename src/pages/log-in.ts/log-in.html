@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="pageTitle">{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header (click)="toggle()">
+      Connection
+    </ion-card-header>
+    <ion-card-content [@openClose]="shown === 'connect' ? 'open' : 'closed'">
+      <ion-item>
+        <ion-label color="primary" floating>Email</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>Password</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <button ion-button block>Go !</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header (click)="toggle()">
+      Créer un compte
+    </ion-card-header>
+    <ion-card-content [@openClose]="shown === 'register' ? 'open' : 'closed'">
+      <ion-item>
+        <ion-label color="primary" floating>Floating Label</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>Floating Label</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

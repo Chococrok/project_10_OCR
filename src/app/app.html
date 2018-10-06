@@ -1,7 +1,16 @@
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Fotomatron</ion-title>
+      <div class="ft-toolbar-content">
+        <ion-title>Fotomatron</ion-title>
+        <button class="ft-icon" (click)="showProfile()" menuClose>
+          <img class ="ft-avatar" *ngIf="profile;else icon" src="{{profile.avatarSrc}}"/>
+          <ng-template #icon>
+              <ion-icon name="contact"></ion-icon>
+          </ng-template>
+        </button>
+        <p></p>
+      </div>
     </ion-toolbar>
   </ion-header>
 

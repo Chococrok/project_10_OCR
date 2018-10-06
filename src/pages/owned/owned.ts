@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { Page } from '../Page';
 import { PhotoPage } from '../photo/photo';
 import { PhotoService } from '../../services/photo.service';
-import { Photo } from '../../models/photo.model';
+import { Photo } from '../../models';
 
 @Component({
   selector: 'page-owned',

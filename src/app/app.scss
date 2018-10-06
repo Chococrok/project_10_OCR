@@ -15,6 +15,30 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+:root {
+  --icon-size: 45px;
+}
+
+.ft-toolbar-content {
+  display: flex;
+  padding-right: 10%;
+}
+
+.ft-icon {
+  background: inherit;
+  padding: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  font-size: 3em;
+}
+
+.ft-avatar {
+  border-radius: 50%;
+  border: 1px solid #000;
+  object-fit: cover;
+  height: 100%;
+}
+
 .pageTitle {
     position: absolute;
     left: 50%;

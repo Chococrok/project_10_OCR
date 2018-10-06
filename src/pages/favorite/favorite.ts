@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Page } from '../Page';
 import { PhotoService } from '../../services/photo.service';
-import { Photo } from '../../models/photo.model';
+import { Photo } from '../../models';
 import { PhotoPage } from '../photo/photo';
 
 @Component({

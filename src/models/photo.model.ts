@@ -1,5 +1,11 @@
 export type Photo = {
-  name: string;
   src: string;
-  metaData: any;
+  metaData: MetaData;
+}
+
+export type MetaData = {
+  title: string;
+  date: Date;
+  location: string;
+  comment?: string;
 }
